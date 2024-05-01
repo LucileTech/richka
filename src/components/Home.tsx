@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div>
-      <h1>Number Converter</h1>
+      <h1>Wellness at Your Fingertips</h1>
     </div>
   );
 }
