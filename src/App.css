@@ -5,6 +5,45 @@
   text-align: center;
 } */
 
+/* Header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh; /* Relative height */
+  width: 100vw; /* Full width of the screen */
+}
+
+.header-left,
+.header-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-left span {
+  margin-right: 20px;
+}
+
+.header-right ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.header-right ul li {
+  margin-right: 20px;
+}
+
+.header-right ul li:last-child {
+  margin-right: 0;
+}
+
+.header-right ul li a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Home */
 .home-container {
   position: relative;
