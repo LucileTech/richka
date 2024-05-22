@@ -1,28 +1,27 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
-
 /* Header */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh; /* Relative height */
-  width: 100vw; /* Full width of the screen */
+  height: auto; /* Remove fixed height */
+  max-width: 100vw;
+  overflow: hidden;
+  padding: 10px; /* Add padding to create space for the border */
+  border: 2px solid black; /* Add border around the entire header */
 }
 
 .header-left,
 .header-right {
-  height: 100%;
   display: flex;
   align-items: center;
 }
 
-.header-left span {
+.header-left {
   margin-right: 20px;
+}
+
+.logo {
+  height: 30px;
 }
 
 .header-right ul {
@@ -44,71 +43,47 @@
   color: black;
 }
 
+/* Ensure all rectangles have same height */
+.header-right ul li {
+  display: flex;
+  align-items: center;
+}
+
+.header-right ul li:before {
+  content: "";
+  display: inline-block;
+  width: 10px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+  border: 2px solid black;
+  margin-right: 10px;
+}
+
 /* Home */
 .home-container {
-  position: relative;
   display: flex;
-  height: 100vh;
-  width: 100vw;
-  background-color: #d8dfd7;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh; /* Take full height of the viewport */
 }
 
-.image-container {
-  position: relative; /* Add position relative */
-  flex: 1;
+.home-container-left {
+  flex: 1; /* Take 50% width */
 }
 
-.image-container img {
+.home-container-right {
+  flex: 1; /* Take 50% width */
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.content-container {
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Align content to the bottom */
-  align-items: flex-end; /* Align content to the right */
-  padding: 2vw; /* Use relative padding */
-}
-
-.title-box {
-  position: absolute;
-  width: 20vw; /* Use relative width */
-  height: 10vh; /* Use relative height */
-  top: 15vh; /* Use relative top position */
-  left: calc(100% - 40vw); /* Use relative left position */
-  display: flex;
-  justify-content: flex-start; /* Align title to the left within the box */
-  align-items: center;
-}
-
-.title {
-  font-family: "Libre Baskerville", serif;
-  font-size: 2vw; /* Use relative font size */
-  text-align: left; /* Align title text to the left */
-  margin-left: 2vw; /* Use relative left margin for spacing */
-}
-
-.content {
-  margin-top: 2vh; /* Use relative margin between title box and content box */
-  padding: 2vw; /* Use relative padding */
-  border-radius: 1vw; /* Use relative border radius */
-  width: 20vw; /* Use relative width */
-  height: 10vh; /* Use relative height */
-}
-
-.content p {
-  margin-bottom: 1vh; /* Use relative spacing between paragraphs */
-}
-
-.content a {
-  color: #000;
-  text-decoration: none;
-}
-
-.content a:hover {
-  text-decoration: underline;
+.content-home {
+  width: 20vw;
 }
