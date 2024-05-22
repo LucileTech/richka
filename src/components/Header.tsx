@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "./../../public/logos/logo.png"; // Importez votre logo
 
 function Header() {
   return (
     <div className="header-container">
       <div className="header-left">
-        <span>RICHKA</span>
+        <img src={logo} alt="Logo" className="logo" />
       </div>
       <div className="header-right">
         <ul>
