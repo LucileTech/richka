@@ -371,3 +371,153 @@
   font-size: 14px;
   line-height: 1.5;
 }
+
+/* ShopAll Component */
+.shop-all {
+  background-color: #f7f2ec;
+  padding: 20px;
+  text-align: center;
+}
+
+.shop-all .products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.shop-all .product {
+  max-width: 200px;
+}
+
+.shop-all .product img {
+  width: 100%;
+}
+
+.shop-all-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #004851;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reviews Component */
+.reviews {
+  background-color: #d8dfd7;
+  padding: 20px;
+  text-align: center;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.review-content p {
+  text-align: left;
+}
+
+.review-image-top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.review-product {
+  padding: 10px;
+  border-top: 1px solid black;
+  position: relative;
+}
+
+.review-product p:first-child {
+  font-weight: bold;
+}
+
+.review-image-bottom-left {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.reviews-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #d8dfd7;
+}
+
+/* Footer Component */
+.footer {
+  background-color: #004851;
+  padding: 20px;
+  color: white;
+}
+
+.footer-signup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-signup form {
+  margin-bottom: 10px;
+}
+
+.footer-signup input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.footer-button {
+  padding: 10px 20px;
+  background-color: #d8dfd7;
+  color: #004851;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-column h3 {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}

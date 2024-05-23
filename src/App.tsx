@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import About from "./components/About";
-import Business from "./components/Values";
+import Business from "./components/Business";
 import Process from "./components/Process";
 import ShopAll from "./components/ShopAll";
 import Reviews from "./components/Reviews";
