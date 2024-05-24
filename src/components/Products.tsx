@@ -16,28 +16,28 @@ const products: Product[] = [
     name: "Terragon Essential Oil",
     size: "5ml",
     price: "$12",
-    imageUrl: "./../../public/photographs/TerragonEssentialOil.png",
+    imageUrl: "/photographs/TerragonEssentialOil.png",
   },
   {
     id: 2,
     name: "Pine Hydrolate",
     size: "200ml",
     price: "$4",
-    imageUrl: "./../../public/photographs/PineHydrolate.png",
+    imageUrl: "/photographs/PineHydrolate.png",
   },
   {
     id: 3,
     name: "Tea 'Emerald Distance'",
     size: "50gr",
     price: "$5",
-    imageUrl: "./../../public/photographs/TeaEmeraldDistance.png",
+    imageUrl: "/photographs/TeaEmeraldDistance.png",
   },
   {
     id: 4,
     name: "Car Air Freshener 'Thyme&Pine'",
     size: "",
     price: "$8",
-    imageUrl: "./../../public/photographs/CarAirFreshenerThyme&Pine.png",
+    imageUrl: "/photographs/CarAirFreshenerThyme&Pine.png",
   },
 ];
 
