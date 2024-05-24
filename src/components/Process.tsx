@@ -9,7 +9,7 @@ const Process: React.FC = () => {
       </div>
       <div className="why-richka-content">
         <div className="why-richka-item">
-          <img src="./../../public/photographs/plants.jpeg" alt="" />
+          <img src="/photographs/plants.jpeg" alt="" />
           <h2>WE ARE GROWING HERBS FOR ALL OUR PRODUCTS</h2>
           <p>
             We decided to keep all the process from choosing seeds to packing
@@ -18,10 +18,7 @@ const Process: React.FC = () => {
           </p>
         </div>
         <div className="why-richka-item">
-          <img
-            src="./../../public/photographs/cows.jpeg"
-            alt="No Fertilizers"
-          />
+          <img src="/photographs/cows.jpeg" alt="No Fertilizers" />
           <h2>WE DON'T USE FERTILIZERS AND SYNTHETIC ADDITIONS</h2>
           <p>
             Having our own code of ethics we primarily make effort to ensure
@@ -30,10 +27,7 @@ const Process: React.FC = () => {
           </p>
         </div>
         <div className="why-richka-item">
-          <img
-            src="./../../public/photographs/bottles.jpeg"
-            alt="Quality Products"
-          />
+          <img src="/photographs/bottles.jpeg" alt="Quality Products" />
           <h2>
             WE ARE RESPONSIBLE FOR THE UNDENIABLE QUALITY OF THE PRODUCT AND
             SELL IT TO YOU WITHOUT INTERMEDIARIES

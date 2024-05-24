@@ -6,7 +6,7 @@ const Home: React.FC = () => {
       {/* Left part */}
       <div className="home-container-left">
         <img
-          src="./../../public/photographs/home.jpeg"
+          src="/photographs/home.jpeg"
           alt="Wellness Image"
           className="image"
         />
