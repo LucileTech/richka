@@ -1,5 +1,3 @@
-// About.tsx
-
 import React from "react";
 
 const About: React.FC = () => {
@@ -21,14 +19,6 @@ const About: React.FC = () => {
       </div>
 
       <div className="about-section">
-        <div className="about-image">
-          <div className="about-image-inside">
-            <img
-              src="./../../public/photographs/founder.jpeg"
-              alt="Richka Founder"
-            />
-          </div>
-        </div>
         <div className="about-content">
           <div className="about-content-inside">
             <h2>About Richka Brand</h2>
@@ -50,15 +40,17 @@ const About: React.FC = () => {
             <a href="#">OUR STORY</a>
           </div>
         </div>
+        <div className="about-image">
+          <div className="about-image-inside">
+            <img src="/photographs/founder2.jpeg" alt="Richka Founder" />
+          </div>
+        </div>
       </div>
 
       <div className="about-section">
         <div className="about-image">
           <div className="about-image-inside">
-            <img
-              src="./../../public/photographs/fields.jpeg"
-              alt="Richka Fields"
-            />
+            <img src="/photographs/fields.jpeg" alt="Richka Fields" />
           </div>
         </div>
         <div className="about-content">
