@@ -3,17 +3,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
-  border: 2px solid black; /* Ajoutez une bordure autour du header */
-  padding: 0 20px; /* Ajoutez un peu d'espacement intérieur */
+  height: 9vh;
+  width: 100vw;
+  max-width: 100vw;
+  border: 1px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow: hidden; /* Prevent content overflow */
 }
 
 .header-left,
 .header-right {
-  width: 50vw;
+  flex: 1; /* Ensure both sides take up equal space */
   height: 10vh;
   display: flex;
   align-items: center;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.header-left {
+  justify-content: flex-start; /* Align items to the start of the flex container */
+}
+
+.header-right {
+  justify-content: flex-end; /* Align items to the end of the flex container */
 }
 
 .header-left span {
@@ -21,42 +33,49 @@
 }
 
 .logo {
-  height: 9vh; /* Ajustez la hauteur du logo selon vos besoins */
-  margin-right: 20px;
+  height: 9vh;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .header-right ul {
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin: 0; /* Ensure no margin is applied by default */
+  width: 100%; /* Ensure the ul takes the full width of the header-right */
 }
 
 .header-right ul li {
   display: flex;
+  align-items: center;
   height: 10vh;
-  border: 2px solid black; /* Ajoutez une bordure autour de chaque élément */
-  padding-right: 3rem; /* Ajoutez un peu d'espacement intérieur */
-  padding-left: 3rem; /* Ajoutez un peu d'espacement intérieur */
-}
-
-.header-right ul li:last-child {
-  margin-right: 0;
+  flex: 1; /* Each li will take equal space within the ul */
+  border: 1px solid black;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center;
+  justify-content: center;
 }
 
 .header-right ul li a {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensure the link takes the full width of the li */
+  height: 100%; /* Ensure the link takes the full height of the li */
   text-decoration: none;
   color: black;
 }
-/* Home */
+
+/********************************************* Home */
 .home-container {
   border-bottom: 1px solid black;
   background-color: #d8dfd7;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 90vh; /* Take full height of the viewport */
+  height: 88vh; /* Take full height of the viewport */
 }
 
 .home-container-left {
@@ -68,28 +87,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5vw;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border: 1px solid black;
 }
 
 .title-box {
-  padding-left: 5vw;
+  padding-top: 6vw;
+  padding-left: 6vw;
   padding-right: 20vw;
 }
 
 .content-home {
   padding-left: 15vw;
   padding-bottom: 5vh;
-  width: 40%;
+  width: 32%;
 }
 
 .content-home p {
   font-size: 1.1rem;
+  padding-top: 1rem;
 }
 
 /* Media queries for responsiveness */
@@ -130,7 +151,7 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #f7f2ec;
   color: #333;
-  padding-top: 7vw;
+  padding-top: 7vh;
   padding-bottom: 7vh;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -139,15 +160,17 @@
 .products-header {
   width: 100vw;
   display: flex;
-  justify-content: space-around;
-}
-
-.products-container a {
-  margin-top: 4rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .products-container h1 {
   font-size: 2rem;
+  padding-left: 7vw;
+}
+
+.products-container a {
+  padding-right: 7vw;
 }
 
 .products-grid {
@@ -391,15 +414,27 @@
 /* Business */
 
 .business-header {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   text-align: center;
-  margin-bottom: 40px;
   background-color: #f7f2ec;
+  border: 1px solid black;
 }
 
 .business-header h1 {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: normal;
-  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.business-header button {
+  background-color: #f7f2ec;
+  border: 1px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
 }
 
 /* Process */

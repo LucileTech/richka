@@ -1,4 +1,5 @@
 // Products.tsx
+import { MdFavoriteBorder } from "react-icons/md";
 
 import React from "react";
 
@@ -59,9 +60,11 @@ const Products: React.FC = () => {
             <div className="product-infos">
               <div className="product-title">{product.name}</div>
               <div className="product-details">{product.size}</div>
-              <div className="product-price">{product.price}</div>
+              <div className="product-price">
+                <MdFavoriteBorder />
+              </div>
             </div>
-            <button className="product-button">ADD TO BAG</button>
+            <button className="product-button">ADD TO FAV</button>
           </div>
         ))}
       </div>
