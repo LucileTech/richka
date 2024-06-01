@@ -332,7 +332,6 @@
   max-width: 1200px;
   padding: 20px;
   background-color: #d8dfd7;
-  border-radius: 10px;
 }
 
 /* Responsive styles */
@@ -441,16 +440,23 @@
 /* WhyRichka.css */
 
 .why-richka-container {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
   background-color: #294b4a;
   color: #f0f0f0;
   padding: 60px 20px;
   font-family: "Helvetica Neue", Arial, sans-serif;
   text-align: left;
+  flex-direction: column;
 }
 
 .why-richka-header {
-  text-align: left;
+  display: flex;
+  justify-content: space-between; /* Spread out items to the edges */
+  align-items: center; /* Center items vertically if necessary */
   margin-bottom: 40px;
+  width: 90%; /* Ensure the header takes full width */
 }
 
 .why-richka-header h1 {
@@ -470,19 +476,18 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 20px;
+  width: 80vw;
 }
 
 .why-richka-item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: #294b4a;
 }
 
 .why-richka-item img {
-  width: 100%;
+  width: 25vw;
   height: auto;
-  border-radius: 10px;
 }
 
 /* Specific grid positioning */
@@ -500,9 +505,12 @@
   align-items: center;
 }
 
-.why-richka-item:nth-child(2) img,
-.why-richka-item:nth-child(3) img {
+.why-richka-item:nth-child(2) img {
   width: 50%;
+  margin-right: 20px;
+}
+.why-richka-item:nth-child(3) img {
+  width: 70%;
   margin-right: 20px;
 }
 
@@ -522,6 +530,13 @@
   background-color: #f7f2ec;
   padding: 20px;
   text-align: center;
+  border: 1px solid black;
+}
+
+.shop-all h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .shop-all .products {
@@ -531,19 +546,24 @@
 }
 
 .shop-all .product {
-  max-width: 200px;
+  width: 25vw;
+  height: 50vh;
 }
 
 .shop-all .product img {
   width: 100%;
+  border: 1px solid black;
+}
+
+.shop-all .product p {
+  padding-top: 0.5rem;
 }
 
 .shop-all-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #004851;
-  color: white;
-  border: none;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
   cursor: pointer;
 }
 
@@ -552,6 +572,12 @@
   background-color: #d8dfd7;
   padding: 20px;
   text-align: center;
+  border: 1px solid black;
+}
+
+.reviews h2 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .reviews-container {
@@ -564,9 +590,10 @@
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
-  width: 30%;
   box-sizing: border-box;
   position: relative;
+  width: 25%;
+  height: 50vh;
 }
 
 .review-content {
@@ -651,6 +678,10 @@
 .footer-columns {
   display: flex;
   justify-content: space-around;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer-column {
