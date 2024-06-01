@@ -1,5 +1,7 @@
 import React from "react";
 import logo from "/logos/logo.png"; // Importez votre logo
+import { BsPerson } from "react-icons/bs";
+import { MdFavoriteBorder } from "react-icons/md";
 
 function Header() {
   return (
@@ -23,6 +25,14 @@ function Header() {
           </li>
           <li>
             <a href="#business">BUSINESS</a>
+          </li>
+          <li>
+            <a href="#login" className="logoright">
+              <BsPerson />
+            </a>
+            <a href="#favorites" className="logoright">
+              <MdFavoriteBorder />
+            </a>
           </li>
         </ul>
       </div>
