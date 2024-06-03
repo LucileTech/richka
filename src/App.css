@@ -334,11 +334,38 @@
   background-color: #d8dfd7;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+/* Hide the mobile-specific section on desktop and tablet */
+#phone-version {
+  display: none;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  /* Hide the desktop-specific section on mobile */
+  #dekstop-version {
+    display: none;
+  }
+
+  /* Show the mobile-specific section on mobile */
+  #phone-version {
+    display: flex;
+  }
+  .about-header {
+    padding: 10vh 5vw;
+  }
+
+  .about-header h1 {
+    font-size: 22px;
+  }
+
+  .about-header p {
+    font-size: 14px;
+  }
+
   .about-section {
     flex-direction: column;
     align-items: center;
+    height: auto;
   }
 
   .about-content,
@@ -349,63 +376,24 @@
 
   .about-content-inside,
   .about-image-inside {
-    width: 90%;
-    height: auto;
+    width: 80%;
+    height: 80%;
   }
 
   .about-content h2 {
     font-size: 20px;
-    margin-bottom: 15px;
   }
 
   .about-content p {
     font-size: 14px;
-    margin-bottom: 15px;
   }
 
-  .about-header h1 {
-    font-size: 24px;
-  }
-
-  .about-header p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .about-section:nth-child(even) {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-header h1 {
-    font-size: 20px;
-  }
-
-  .about-content h2 {
-    font-size: 18px;
-  }
-
-  .about-content p {
-    font-size: 13px;
-  }
-
-  .about-header p {
-    font-size: 12px;
-  }
-
-  /* Ensure the image is above the text in mobile view */
-  .about-section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-section:nth-child(1) .about-content,
-  .about-section:nth-child(1) .about-image {
+  /* Reverse the order of about-content and about-image for the first about-section */
+  .about-section:first-of-type .about-content {
     order: 2;
   }
 
-  .about-section:nth-child(1) .about-image {
+  .about-section:first-of-type .about-image {
     order: 1;
   }
 }
