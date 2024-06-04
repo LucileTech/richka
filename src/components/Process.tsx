@@ -42,6 +42,9 @@ const Process: React.FC = () => {
             </p>
           </div>
         </div>
+        <a id="phone-link" href="#">
+          DISCOVER OUR PRODUCTION PROCESS
+        </a>
       </div>
     </div>
   );

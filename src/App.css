@@ -513,6 +513,20 @@
   line-height: 1.5;
 }
 
+#phone-link {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .why-richka-header a {
+    display: none;
+  }
+
+  #phone-link {
+    display: flex;
+  }
+}
+
 /* ShopAll Component */
 .shop-all {
   background-color: #f7f2ec;
@@ -554,6 +568,18 @@
   border: 1px solid black;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .shop-all .product {
+    height: 25vh;
+    width: 35vw;
+  }
+
+  .shop-all-button {
+    margin-bottom: 4rem;
+  }
+}
+
 /* Reviews Component */
 .reviews {
   background-color: #d8dfd7;
@@ -626,6 +652,12 @@
   margin-top: 20px;
   background-color: #d8dfd7;
   font-family: "Courier New", Courier, monospace; /* Correspond à la police de l'image */
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    width: 75%;
+  }
 }
 
 /* Footer Component */
