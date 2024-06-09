@@ -68,6 +68,46 @@
   color: black;
 }
 
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header-right ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    background-color: #d8dfd7;
+  }
+
+  #logoright {
+    display: none;
+  }
+
+  .header-right ul.open {
+    display: flex; /* Display the menu when open */
+    width: 50vw;
+  }
+
+  .header-right ul li {
+    width: 100%;
+    border: none; /* Remove border for mobile */
+  }
+
+  .header-right {
+    justify-content: space-between; /* Adjust to make space for hamburger */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+}
+
 /********************************************* Home */
 .home-container {
   border-bottom: 1px solid black;
