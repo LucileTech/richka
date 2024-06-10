@@ -1,6 +1,5 @@
 // Products.tsx
 import { MdFavoriteBorder } from "react-icons/md";
-
 import React from "react";
 
 interface Product {
@@ -68,6 +67,7 @@ const Products: React.FC = () => {
           </div>
         ))}
       </div>
+      <a className="shop-all-link">SHOP ALL BESTSELLERS</a>
     </div>
   );
 };
