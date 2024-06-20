@@ -10,6 +10,9 @@ import Business from "./components/Business";
 import BusinessHome from "./components/Business/BusinessHome";
 import BusinessAbout from "./components/Business/BusinessAbout";
 import BusinessSupport from "./components/Business/BusinessSupport";
+import BenefitsOfJoining from "./components/Business/BenefitsOfJoining";
+import VideoComponent from "./components/Business/VideoComponent";
+import CenteredParagraph from "./components/Business/CenteredParagraph";
 
 import Process from "./components/Process";
 import ShopAll from "./components/ShopAll";
@@ -32,7 +35,10 @@ function App() {
         </Route>
         <Route path="/business">
           <BusinessHome />
+          <CenteredParagraph />
+          <BenefitsOfJoining />
           <BusinessAbout />
+          <VideoComponent />
           <BusinessSupport />
         </Route>
       </Switch>
