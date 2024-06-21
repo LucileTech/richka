@@ -469,6 +469,52 @@
   }
 }
 
+/* Learn Teas */
+
+.about-images {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+}
+
+.about-image {
+  max-width: 50vw;
+  object-fit: contain;
+  background-color: #aeafa9;
+}
+
+#teas-section-top {
+  padding-top: 10vh;
+  padding-bottom: 1vh;
+  background-color: #aeafa9;
+  border: none;
+}
+
+#teas-section-bottom {
+  padding-top: 1vh;
+  padding-bottom: 10vh;
+  background-color: #aeafa9;
+  border: none;
+}
+
+#learn-teas {
+  background-color: #aeafa9;
+}
+
+#about-teas-content {
+  background-color: #aeafa9;
+  border: 1px solid black;
+}
+
+.about-content-inside-teas {
+  display: flex;
+  flex-direction: row;
+}
+
+#number-content-inside-teas {
+  font-size: 8em;
+  color: #d8dfd7;
+}
 /* Business */
 
 .business-header {
@@ -738,6 +784,11 @@
   background-color: #f7f2ec;
   border: 1px solid black;
 }
+
+.benefits-container h1 {
+  position: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -838,6 +889,164 @@
 
 .control-button:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ProfessionalApplication.css */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #d8dfd7;
+  height: 100vh;
+}
+
+.form-box {
+  background-color: #fdfcf9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-box h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-box p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box form input,
+.form-box form select,
+.form-box form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box form input[type="file"] {
+  padding: 0.5rem 0;
+}
+
+.form-box form button {
+  background-color: #8f8f8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-box form button:hover {
+  background-color: #7e7e7e;
+}
+
+@media (min-width: 768px) {
+  .form-box {
+    padding: 3rem;
+  }
+}
+
+/* EffectSelector.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #004851;
+  color: #d8dfd7;
+  padding: 2rem;
+  height: 40vh;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.title {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.effects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.effect {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  .title,
+  .question {
+    text-align: left;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .question {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .effects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .effect {
+    margin: 0.5rem 1rem;
+  }
+}
+
+/* Craft Teas */
+#craft-teas {
+  background-color: #d8dfd7;
+}
+
+#text-teas {
+  color: black;
+}
+
+/* Shop Teas */
+#shop-teas {
+  background-color: #d8dfd7;
 }
 
 /* Footer Component */

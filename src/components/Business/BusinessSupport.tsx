@@ -1,4 +1,4 @@
-function BusinessSupport() {
+const BusinessSupport: React.FC = () => {
   return (
     <div className="business-header">
       <h1>Need more information about the Program?</h1>
@@ -9,6 +9,6 @@ function BusinessSupport() {
       <button>CONTACT BUSINESS SUPPORT</button>
     </div>
   );
-}
+};
 
 export default BusinessSupport;
