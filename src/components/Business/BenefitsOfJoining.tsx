@@ -19,7 +19,6 @@ const benefits = [
 const BenefitsOfJoining: React.FC = () => {
   return (
     <div className="benefits-container">
-      {" "}
       <h1 className="title">BENEFITS OF JOINING</h1>
       <div className="container">
         {benefits.map((benefit, index) => (
