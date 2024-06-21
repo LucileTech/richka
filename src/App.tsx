@@ -29,6 +29,12 @@ import EffectSelectors from "./components/Teas/EffectSelectors";
 import CraftTeas from "./components/Teas/CraftTeas";
 import ShopTeas from "./components/Teas/ShopTeas";
 
+// Oils
+import OilsHome from "./components/Oils/OilsHome";
+import OilsDescription from "./components/Oils/OilsDescription";
+import AboutOils from "./components/Oils/AboutOils";
+import OilProduction from "./components/Oils/OilProduction";
+
 // Footer
 import Footer from "./components/Footer";
 
@@ -65,6 +71,12 @@ function App() {
           <CraftTeas />
           <VideoComponent />
           <ShopTeas />
+        </Route>
+        <Route path="/learn-oils">
+          <OilsHome />
+          <OilsDescription />
+          <AboutOils />
+          <OilProduction />
         </Route>
       </Switch>
       <Footer />

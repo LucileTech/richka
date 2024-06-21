@@ -1,23 +1,14 @@
 import React from "react";
+import HomeComponent from "./HomeComponent";
 
 const Home: React.FC = () => {
   return (
-    <div className="home-container">
-      {/* Left part */}
-      <div className="home-container-left">
-        <img
-          src="/photographs/home.jpeg"
-          alt="Wellness Image"
-          className="image"
-        />
-      </div>
-
-      {/* Right part */}
-      <div className="home-container-right">
-        <div className="title-box">
-          <h1>Wellness at Your Fingertips</h1>
-        </div>
-        <div className="content-home">
+    <HomeComponent
+      imgSrc="/photographs/home.jpeg"
+      imgAlt="Wellness Image"
+      title="Wellness at Your Fingertips"
+      content={
+        <>
           <p>
             We’re Richka. We create natural products for your well-being and
             beauty from our own herbs.
@@ -27,9 +18,9 @@ const Home: React.FC = () => {
               SHOP NOW
             </a>
           </p>
-        </div>
-      </div>
-    </div>
+        </>
+      }
+    />
   );
 };
 
