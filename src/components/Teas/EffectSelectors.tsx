@@ -4,7 +4,7 @@ const EffectSelector: React.FC = () => {
   return (
     <div className="container">
       <div className="text-section">
-        <p className="title">BROWSE TEAS BY USE</p>
+        {/* <p className="title">BROWSE TEAS BY USE</p> */}
         <h1 className="question">What effect would you like to achieve?</h1>
       </div>
       <div className="effects">

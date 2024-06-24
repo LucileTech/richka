@@ -15,8 +15,8 @@ const Home: React.FC = () => {
             beauty from our own herbs.
           </p>
           <p>
-            <a href="#" className="shop-link">
-              SHOP NOW
+            <a href="/#/oils" className="oils-link">
+              LEARN MORE
             </a>
           </p>
         </>

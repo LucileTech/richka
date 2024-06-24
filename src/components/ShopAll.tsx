@@ -27,7 +27,11 @@ const ShopAll: React.FC = () => {
           </p>
         </div>
       </div>
-      <button className="shop-all-button">SHOP ALL</button>
+      <button className="shop-all-button">
+        <a href="/#/oils" className="oils-link">
+          MORE ABOUT OILS
+        </a>
+      </button>
     </div>
   );
 };

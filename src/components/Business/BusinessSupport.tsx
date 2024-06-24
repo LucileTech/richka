@@ -6,7 +6,7 @@ const BusinessSupport: React.FC = () => {
         We’re happy to offer personal support. Our partnerships department can
         answer anything today.
       </h1>
-      <button>CONTACT BUSINESS SUPPORT</button>
+      {/* <button>CONTACT BUSINESS SUPPORT</button> */}
     </div>
   );
 };

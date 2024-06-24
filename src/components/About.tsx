@@ -3,7 +3,7 @@ import { getAssetPath } from "../utils/getAssetPath";
 
 const About: React.FC = () => {
   return (
-    <div className="about-container">
+    <div id="ABOUT" className="about-container">
       <div className="about-header">
         <h1>WELCOME TO THE WORLD OF NATURAL HERBS</h1>
         <h1>Healing Power of Nature in Every Drop</h1>
@@ -39,7 +39,7 @@ const About: React.FC = () => {
               herbs, which have long been used by our ancestors to maintain
               health and beauty, here."
             </p>
-            <a href="#">OUR STORY</a>
+            {/* <a href="#">OUR STORY</a> */}
           </div>
         </div>
         <div className="about-image">
@@ -80,7 +80,7 @@ const About: React.FC = () => {
               herbs, which have long been used by our ancestors to maintain
               health and beauty, here."
             </p>
-            <a href="#">OUR STORY</a>
+            {/* <a href="#">OUR STORY</a> */}
           </div>
         </div>
       </div>

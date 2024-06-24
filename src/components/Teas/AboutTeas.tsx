@@ -24,10 +24,10 @@ const AboutTeas: React.FC = () => {
               properties of teas can also aid in sleep disorders such as
               insomnia or restless sleep.
             </p>
-            <a href="#">
+            <p>
               Drink This: Peppermint, lemon balm, chamomile, marigold, willow
               herb
-            </a>
+            </p>
           </div>
         </div>
         <div className="about-content" id="about-teas-content">
@@ -45,7 +45,7 @@ const AboutTeas: React.FC = () => {
               offers antifungal and antibacterial properties. The medicinal
               properties of tea mean you can quit your cold or flu sooner.
             </p>
-            <a href="#">Drink This: THYME, echinacea, sage and fennel</a>
+            <p>Drink This: THYME, echinacea, sage and fennel</p>
           </div>
         </div>
       </div>
@@ -65,9 +65,7 @@ const AboutTeas: React.FC = () => {
               thus providing it with nutrients and essential oxygen for a
               healthy mind.
             </p>
-            <a href="#">
-              Drink This: Thyme, hyssop, Ginger Root Tea, lemon balm
-            </a>
+            <p>Drink This: Thyme, hyssop, Ginger Root Tea, lemon balm</p>
           </div>
         </div>
         <div className="about-content" id="about-teas-content">
@@ -83,7 +81,7 @@ const AboutTeas: React.FC = () => {
               Alternatively, many herbal teas have properties that can help to
               reduce pain without the negative side effects.
             </p>
-            <a href="#">Drink This: Ginger Root Tea, melissa, willow herb</a>
+            <p>Drink This: Ginger Root Tea, melissa, willow herb</p>
           </div>
         </div>
       </div>

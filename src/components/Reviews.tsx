@@ -2,7 +2,7 @@ import { getAssetPath } from "../utils/getAssetPath";
 
 const Reviews = () => {
   return (
-    <div className="reviews">
+    <div id="REVIEWS" className="reviews">
       <h2>FROM OUR CUSTOMERS</h2>
       <div className="reviews-container">
         <div className="review-card">

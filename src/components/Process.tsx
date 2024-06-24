@@ -3,10 +3,10 @@ import { getAssetPath } from "../utils/getAssetPath";
 
 const Process: React.FC = () => {
   return (
-    <div className="why-richka-container">
+    <div id="LEARN" className="why-richka-container">
       <div className="why-richka-header">
         <h1>Why Richka?</h1>
-        <a href="#">DISCOVER OUR PRODUCTION PROCESS</a>
+        <a href="/#/oils">DISCOVER OUR PRODUCTION PROCESS</a>
       </div>
       <div className="why-richka-content">
         <div className="why-richka-item">
@@ -20,7 +20,7 @@ const Process: React.FC = () => {
         </div>
         <div className="why-richka-item">
           <img
-            src={getAssetPath("photographs/cows.jpeg")}
+            src={getAssetPath("/photographs/cows.jpeg")}
             alt="No Fertilizers"
           />
           <div className="why-richka-item-text">

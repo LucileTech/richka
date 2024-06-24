@@ -15,7 +15,7 @@ const OilProduction: React.FC = () => {
         highest quality essential oils and other natural products for you and
         your love ones.
       </h1>
-      <button>MEET OUR TEAM</button>
+      {/* <button>MEET OUR TEAM</button> */}
     </div>
   );
 };

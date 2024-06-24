@@ -25,7 +25,7 @@ const BusinessAbout: React.FC = () => {
               herbs, which have long been used by our ancestors to maintain
               health and beauty, here."
             </p>
-            <a href="#">OUR STORY</a>
+            {/* <a href="#">OUR STORY</a> */}
           </div>
         </div>
         <div className="about-image">

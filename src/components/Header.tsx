@@ -14,24 +14,20 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-left">
-        <img src={logo} alt="Logo" className="logo" />
+        <a href="/#">
+          <img src={logo} alt="Logo" className="logo" />
+        </a>
       </div>
       <div className="header-right">
         <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
           <li>
-            <a href="#shop">SHOP</a>
+            <a href="/#/teas">LEARN</a>
           </li>
           <li>
-            <a href="#learn">LEARN</a>
+            <a href="/#/oils">ABOUT</a>
           </li>
           <li>
-            <a href="#about">ABOUT</a>
-          </li>
-          <li>
-            <a href="#blog">BLOG</a>
-          </li>
-          <li>
-            <a href="#business">BUSINESS</a>
+            <a href="/#/business">BUSINESS</a>
           </li>
           <li className="icons">
             <a href="#login" id="logoright">

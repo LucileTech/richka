@@ -62,7 +62,7 @@ function App() {
         <Route path="/proform">
           <ProfessionnalApplication />
         </Route>
-        <Route path="/learn-teas">
+        <Route path="/teas">
           <TeasHome />
           <TeasDescription />
           <AboutTeas />
@@ -71,7 +71,7 @@ function App() {
           <VideoComponent />
           <ShopTeas />
         </Route>
-        <Route path="/learn-oils">
+        <Route path="/oils">
           <OilsHome />
           <OilsDescription />
           <AboutOils />

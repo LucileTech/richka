@@ -1,6 +1,6 @@
 // Products.tsx
-import { MdFavoriteBorder } from "react-icons/md";
-import React from "react";
+import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
+import React, { useState } from "react";
 import { getAssetPath } from "../utils/getAssetPath";
 
 interface Product {
@@ -43,14 +43,28 @@ const products: Product[] = [
 ];
 
 const Products: React.FC = () => {
+  const [likedStates, setLikedStates] = useState<boolean[]>(
+    products.map(() => false)
+  );
+
+  const toggleLike = (index: number) => {
+    setLikedStates((prevLikedStates) => {
+      const newLikedStates = [...prevLikedStates];
+      newLikedStates[index] = !newLikedStates[index];
+      return newLikedStates;
+    });
+  };
+
   return (
-    <div className="products-container">
+    <div id="SHOP" className="products-container">
       <div className="products-header">
         <h1>Our Customer's Favourites</h1>
-        <a>SHOP ALL BESTSELLERS</a>
+        <a href="/#/teas" className="learn-about-teas">
+          LEARN ABOUT TEAS
+        </a>
       </div>
       <div className="products-grid">
-        {products.map((product) => (
+        {products.map((product, index) => (
           <div key={product.id} className="product-card">
             <img
               className="product-img"
@@ -61,14 +75,26 @@ const Products: React.FC = () => {
               <div className="product-title">{product.name}</div>
               <div className="product-details">{product.size}</div>
               <div className="product-price">
-                <MdFavoriteBorder />
+                {likedStates[index] ? (
+                  <MdFavorite
+                    onClick={() => toggleLike(index)}
+                    style={{ cursor: "pointer" }}
+                  />
+                ) : (
+                  <MdFavoriteBorder
+                    onClick={() => toggleLike(index)}
+                    style={{ cursor: "pointer" }}
+                  />
+                )}
               </div>
             </div>
-            <button className="product-button">ADD TO FAV</button>
+            {/* <button className="product-button">ADD TO FAV</button> */}
           </div>
         ))}
       </div>
-      <a className="shop-all-link">SHOP ALL BESTSELLERS</a>
+      <a href="/#/teas" className="shop-all-link">
+        LEARN ABOUT TEAS
+      </a>
     </div>
   );
 };

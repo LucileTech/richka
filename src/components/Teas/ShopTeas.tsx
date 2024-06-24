@@ -5,7 +5,7 @@ const ShopTeas: React.FC = () => {
         Ukrainian brand Richka, continues the wonderful folk tradition of tea
         drinking and offers 4 author's blends of teas
       </h1>
-      <button>SHOP TEAS</button>
+      {/* <button>SHOP TEAS</button> */}
     </div>
   );
 };
