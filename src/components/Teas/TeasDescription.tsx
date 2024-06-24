@@ -18,10 +18,10 @@ const TeasDescription: React.FC = () => {
 
   const teaImages = [
     {
-      src: getAssetPath("/photographs/teaspageflowers.jpeg"),
+      src: getAssetPath("/photographs/teaspageflowers.webp"),
       alt: "Tea Image",
     },
-    { src: getAssetPath("/photographs/teaspagetea.jpeg"), alt: "Tea Image" },
+    { src: getAssetPath("/photographs/teaspagetea.webp"), alt: "Tea Image" },
   ];
 
   return (

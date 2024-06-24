@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "/logos/logo.png"; // Import your logo
-import { BsPerson } from "react-icons/bs";
-import { MdFavoriteBorder } from "react-icons/md";
+// import { BsPerson } from "react-icons/bs";
+// import { MdFavoriteBorder } from "react-icons/md";
 import { FaBars } from "react-icons/fa"; // Import the hamburger icon
 
 function Header() {
@@ -14,6 +14,9 @@ function Header() {
   return (
     <div className="header-container">
       <div className="header-left">
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <FaBars />
+        </div>
         <a href="/#">
           <img src={logo} alt="Logo" className="logo" />
         </a>
@@ -29,18 +32,15 @@ function Header() {
           <li>
             <a href="/richka/#/business">BUSINESS</a>
           </li>
-          <li className="icons">
+          {/* <li className="icons">
             <a href="#login" id="logoright">
               <BsPerson />
             </a>
             <a href="#favorites" id="logoright">
               <MdFavoriteBorder />
             </a>
-          </li>
+          </li> */}
         </ul>
-        <div className="hamburger" onClick={toggleMobileMenu}>
-          <FaBars />
-        </div>
       </div>
     </div>
   );

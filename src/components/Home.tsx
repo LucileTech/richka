@@ -5,7 +5,7 @@ import { getAssetPath } from "../utils/getAssetPath";
 const Home: React.FC = () => {
   return (
     <HomeComponent
-      imgSrc={getAssetPath("/photographs/home.jpeg")}
+      imgSrc={getAssetPath("/photographs/home.webp")}
       imgAlt="Wellness Image"
       title="Wellness at Your Fingertips"
       content={

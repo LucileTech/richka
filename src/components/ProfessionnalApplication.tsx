@@ -1,5 +1,4 @@
 import React from "react";
-import { getAssetPath } from "../utils/getAssetPath";
 
 const ProfessionalApplication: React.FC = () => {
   return (
@@ -31,17 +30,16 @@ const ProfessionalApplication: React.FC = () => {
             <option value="" disabled selected>
               How Did You Hear About Us?
             </option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+            <option value="option1">Website</option>
+            <option value="option2">Friend</option>
+            <option value="option3">Social Media</option>
           </select>
           <select required>
             <option value="" disabled selected>
               What Best Describes Your Business?
             </option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+            <option value="option1">Independant</option>
+            <option value="option2">Corporation</option>
           </select>
           <textarea
             placeholder="Tell Us About Your Company"
@@ -52,15 +50,7 @@ const ProfessionalApplication: React.FC = () => {
             Business Permit or Licence
             <input type="file" required />
           </label>
-          <label>
-            Verification Code
-            <input
-              type="text"
-              placeholder="Enter the text in the box below"
-              required
-            />
-            <img src={getAssetPath("path/to/captcha/image")} alt="Captcha" />
-          </label>
+
           <button type="submit">SUBMIT</button>
         </form>
       </div>

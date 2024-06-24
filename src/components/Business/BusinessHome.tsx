@@ -7,7 +7,7 @@ const BuisinessHome: React.FC = () => {
       {/* Left part */}
       <div className="home-container-left">
         <img
-          src={getAssetPath("/photographs/businesshome.jpeg")}
+          src={getAssetPath("/photographs/businesshome.webp")}
           alt="Wellness Image"
           className="image"
         />
