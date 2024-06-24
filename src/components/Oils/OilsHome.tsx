@@ -1,10 +1,11 @@
 import React from "react";
 import HomeComponent from "../HomeComponent";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const OilsHome: React.FC = () => {
   return (
     <HomeComponent
-      imgSrc="/photographs/oilspagehome.jpeg"
+      imgSrc={getAssetPath("/photographs/oilspagehome.jpeg")}
       imgAlt="Oil Image"
       title="What Are Essential Oils?"
       content={

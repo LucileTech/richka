@@ -1,20 +1,21 @@
 import React from "react";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const benefits = [
   {
-    imgSrc: "/public/logos/Craft_Teas_1.png",
+    imgSrc: getAssetPath("/logos/Craft_Teas_1.png"),
     text: "Aroma and taste obtained during brewing are rich and multifaceted;",
   },
   {
-    imgSrc: "/public/logos/Craft_Teas_2.png",
+    imgSrc: getAssetPath("/logos/Craft_Teas_2.png"),
     text: "  Large fraction of tea. We preserve leaves of herbs and flowers from crush so you easily can distinguish the components and enjoy the view of brewed tea.",
   },
   {
-    imgSrc: "/public/logos/Craft_Teas_3.png",
+    imgSrc: getAssetPath("/logos/Craft_Teas_3.png"),
     text: "Clear and simple composition (without synthetic flavors and impurities) and defined properties (for vitality, soothing or relaxation)",
   },
   {
-    imgSrc: "/public/logos/Craft_Teas_4.png",
+    imgSrc: getAssetPath("/logos/Craft_Teas_4.png"),
     text: "Only loose leaf tea. Tea bags free is one of our priorities is caring for the environment.",
   },
 ];

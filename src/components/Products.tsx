@@ -1,6 +1,7 @@
 // Products.tsx
 import { MdFavoriteBorder } from "react-icons/md";
 import React from "react";
+import { getAssetPath } from "../utils/getAssetPath";
 
 interface Product {
   id: number;
@@ -16,28 +17,28 @@ const products: Product[] = [
     name: "Terragon Essential Oil",
     size: "5ml",
     price: "$12",
-    imageUrl: "/photographs/TerragonEssentialOil.png",
+    imageUrl: getAssetPath("/photographs/TerragonEssentialOil.png"),
   },
   {
     id: 2,
     name: "Pine Hydrolate",
     size: "200ml",
     price: "$4",
-    imageUrl: "/photographs/PineHydrolate.png",
+    imageUrl: getAssetPath("/photographs/PineHydrolate.png"),
   },
   {
     id: 3,
     name: "Tea 'Emerald Distance'",
     size: "50gr",
     price: "$5",
-    imageUrl: "/photographs/TeaEmeraldDistance.png",
+    imageUrl: getAssetPath("/photographs/TeaEmeraldDistance.png"),
   },
   {
     id: 4,
     name: "Car Air Freshener 'Thyme&Pine'",
     size: "",
     price: "$8",
-    imageUrl: "/photographs/CarAirFreshenerThyme&Pine.png",
+    imageUrl: getAssetPath("/photographs/CarAirFreshenerThyme&Pine.png"),
   },
 ];
 

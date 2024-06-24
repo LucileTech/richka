@@ -1,17 +1,18 @@
 import React from "react";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const benefits = [
-  { imgSrc: "/public/logos/Discount icon.png", text: "30% discount" },
+  { imgSrc: getAssetPath("/logos/Discount icon.png"), text: "30% discount" },
   {
-    imgSrc: "/public/logos/Purity button.png",
+    imgSrc: getAssetPath("/logos/Purity button.png"),
     text: "Pure natural products manufactured completely by our team",
   },
   {
-    imgSrc: "/public/logos/Savings icon.png",
+    imgSrc: getAssetPath("/logos/Savings icon.png"),
     text: "Save up to 50% compared to MLM competitors",
   },
   {
-    imgSrc: "/public/logos/No cruelty icon.png",
+    imgSrc: getAssetPath("/logos/No cruelty icon.png"),
     text: "Tested and certified products to ensure quality, safety & effectiveness",
   },
 ];

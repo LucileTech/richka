@@ -1,5 +1,6 @@
 import React from "react";
 import CenteredParagraph from "../ImageAndDescription";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const TeasDescription: React.FC = () => {
   const teaHistoryContent = `A lot of us remember our childhood summer holidays at grandparents’ village house. 
@@ -16,8 +17,11 @@ const TeasDescription: React.FC = () => {
     to get them.`;
 
   const teaImages = [
-    { src: "/photographs/teaspageflowers.jpeg", alt: "Tea Image" },
-    { src: "/photographs/teaspagetea.jpeg", alt: "Tea Image" },
+    {
+      src: getAssetPath("/photographs/teaspageflowers.jpeg"),
+      alt: "Tea Image",
+    },
+    { src: getAssetPath("/photographs/teaspagetea.jpeg"), alt: "Tea Image" },
   ];
 
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../utils/getAssetPath";
 
 const ProfessionalApplication: React.FC = () => {
   return (
@@ -58,7 +59,7 @@ const ProfessionalApplication: React.FC = () => {
               placeholder="Enter the text in the box below"
               required
             />
-            <img src="path/to/captcha/image" alt="Captcha" />
+            <img src={getAssetPath("path/to/captcha/image")} alt="Captcha" />
           </label>
           <button type="submit">SUBMIT</button>
         </form>

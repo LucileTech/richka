@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const BusinessAbout: React.FC = () => {
   return (
@@ -29,7 +30,10 @@ const BusinessAbout: React.FC = () => {
         </div>
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/founder2.jpeg" alt="Richka Founder" />
+            <img
+              src={getAssetPath("/photographs/founder2.jpeg")}
+              alt="Richka Founder"
+            />
           </div>
         </div>
       </div>
@@ -39,7 +43,10 @@ const BusinessAbout: React.FC = () => {
         <div className="about-content">
           <div className="about-image">
             <div className="about-image-inside">
-              <img src="/photographs/founder2.jpeg" alt="Richka Founder" />
+              <img
+                src={getAssetPath("/photographs/founder2.jpeg")}
+                alt="Richka Founder"
+              />
             </div>
           </div>
           <div className="about-content-inside">

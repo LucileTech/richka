@@ -1,3 +1,5 @@
+import { getAssetPath } from "../utils/getAssetPath";
+
 const Reviews = () => {
   return (
     <div className="reviews">
@@ -6,7 +8,7 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src="/photographs/review1.png"
+              src={getAssetPath("/photographs/review1.png")}
               alt="Katya Yatsenko"
               className="review-image-top-right"
             />
@@ -23,7 +25,10 @@ const Reviews = () => {
             </p>
           </div>
           <div className="review-product">
-            <img src="/photographs/review1product.png" alt="Herbs Symphony" />
+            <img
+              src={getAssetPath("/photographs/review1product.png")}
+              alt="Herbs Symphony"
+            />
             <div>
               <h3>Tea "Herbs Symphony", 50gr</h3>
               <p>
@@ -36,7 +41,7 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src="/photographs/review2.png"
+              src={getAssetPath("/photographs/review2.png")}
               alt="Serhiy Bondar"
               className="review-image-top-right"
             />
@@ -54,7 +59,7 @@ const Reviews = () => {
           </div>
           <div className="review-product">
             <img
-              src="/photographs/review2product.png"
+              src={getAssetPath("/photographs/review2product.png")}
               alt="Peppermint Essential Oil"
             />
             <div>
@@ -69,7 +74,7 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src="/photographs/review3.png"
+              src={getAssetPath("/photographs/review3.png")}
               alt="Iryna Pavlyuk"
               className="review-image-top-right"
             />
@@ -87,7 +92,7 @@ const Reviews = () => {
           </div>
           <div className="review-product">
             <img
-              src="/photographs/review3product.png"
+              src={getAssetPath("/photographs/review3product.png")}
               alt="Lavenda Hydrolate"
             />
             <div>

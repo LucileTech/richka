@@ -1,10 +1,11 @@
 import React from "react";
 import HomeComponent from "./HomeComponent";
+import { getAssetPath } from "../utils/getAssetPath";
 
 const Home: React.FC = () => {
   return (
     <HomeComponent
-      imgSrc="/photographs/home.jpeg"
+      imgSrc={getAssetPath("/photographs/home.jpeg")}
       imgAlt="Wellness Image"
       title="Wellness at Your Fingertips"
       content={

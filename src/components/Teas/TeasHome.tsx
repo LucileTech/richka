@@ -1,10 +1,11 @@
 import React from "react";
 import HomeComponent from "../HomeComponent";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const TeasHome: React.FC = () => {
   return (
     <HomeComponent
-      imgSrc="/photographs/teaspagehome.jpeg"
+      imgSrc={getAssetPath("/photographs/teaspagehome.jpeg")}
       imgAlt="Tea Image"
       title="Ukrainian tea ceremony is here"
       content={

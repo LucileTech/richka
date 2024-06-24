@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../utils/getAssetPath";
 
 const Process: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Process: React.FC = () => {
       </div>
       <div className="why-richka-content">
         <div className="why-richka-item">
-          <img src="/photographs/plants.jpeg" alt="" />
+          <img src={getAssetPath("/photographs/plants.jpeg")} alt="" />
           <h2>WE ARE GROWING HERBS FOR ALL OUR PRODUCTS</h2>
           <p>
             We decided to keep all the process from choosing seeds to packing
@@ -18,7 +19,10 @@ const Process: React.FC = () => {
           </p>
         </div>
         <div className="why-richka-item">
-          <img src="/photographs/cows.jpeg" alt="No Fertilizers" />
+          <img
+            src={getAssetPath("photographs/cows.jpeg")}
+            alt="No Fertilizers"
+          />
           <div className="why-richka-item-text">
             <h2>WE DON'T USE FERTILIZERS AND SYNTHETIC ADDITIONS</h2>
             <p>
@@ -29,7 +33,10 @@ const Process: React.FC = () => {
           </div>
         </div>
         <div className="why-richka-item">
-          <img src="/photographs/bottles.jpeg" alt="Quality Products" />
+          <img
+            src={getAssetPath("/photographs/bottles.jpeg")}
+            alt="Quality Products"
+          />
           <div className="why-richka-item-text">
             <h2>
               WE ARE RESPONSIBLE FOR THE UNDENIABLE QUALITY OF THE PRODUCT AND

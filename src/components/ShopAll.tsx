@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../utils/getAssetPath";
 
 const ShopAll: React.FC = () => {
   return (
@@ -6,14 +7,20 @@ const ShopAll: React.FC = () => {
       <h2>Choose your new natural experience</h2>
       <div className="products">
         <div className="product">
-          <img src="/photographs/tea.jpeg" alt="Tea Emerald Distance" />
+          <img
+            src={getAssetPath("/photographs/tea.jpeg")}
+            alt="Tea Emerald Distance"
+          />
           <p>
             Tea “Emerald Distance” for cosy evening with unusual relaxing
             flavour
           </p>
         </div>
         <div className="product">
-          <img src="/photographs/oil.png" alt="Thyme Essential Oil" />
+          <img
+            src={getAssetPath("/photographs/oil.png")}
+            alt="Thyme Essential Oil"
+          />
           <p>
             Thyme Essential Oil for toning aromatherapy session or a healing
             massage

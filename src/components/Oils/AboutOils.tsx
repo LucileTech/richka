@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const AboutOils: React.FC = () => {
   return (
@@ -24,7 +25,10 @@ const AboutOils: React.FC = () => {
       <div className="about-section">
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage1.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage1.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
         <div className="about-content">
@@ -71,7 +75,10 @@ const AboutOils: React.FC = () => {
         </div>
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage2.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage2.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
       </div>
@@ -79,7 +86,10 @@ const AboutOils: React.FC = () => {
       <div className="about-section">
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage3.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage3.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
         <div className="about-content">
@@ -126,7 +136,10 @@ const AboutOils: React.FC = () => {
         </div>
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage4.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage4.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
       </div>
@@ -134,7 +147,10 @@ const AboutOils: React.FC = () => {
       <div className="about-section">
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage5.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage5.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
         <div className="about-content">
@@ -190,7 +206,10 @@ const AboutOils: React.FC = () => {
         </div>
         <div className="about-image">
           <div className="about-image-inside">
-            <img src="/photographs/oilpage6.jpeg" alt="Richka Fields" />
+            <img
+              src={getAssetPath("/photographs/oilpage6.jpeg")}
+              alt="Richka Fields"
+            />
           </div>
         </div>
       </div>

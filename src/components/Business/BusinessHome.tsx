@@ -1,4 +1,5 @@
 import React from "react";
+import { getAssetPath } from "../../utils/getAssetPath";
 
 const BuisinessHome: React.FC = () => {
   return (
@@ -6,7 +7,7 @@ const BuisinessHome: React.FC = () => {
       {/* Left part */}
       <div className="home-container-left">
         <img
-          src="/photographs/businesshome.jpeg"
+          src={getAssetPath("/photographs/businesshome.jpeg")}
           alt="Wellness Image"
           className="image"
         />
