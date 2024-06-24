@@ -1,5 +1,12 @@
+// vite.config.js
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vitejs.dev/config/
-export default defineConfig({ plugins: [react()], base: "/" });
+export default defineConfig({
+  plugins: [react()],
+  base: "/richka/", // Correct base path for GitHub Pages deployment
+  build: {
+    outDir: "dist", // Output directory
+    assetsDir: ".", // Relative to outDir
+  },
+});

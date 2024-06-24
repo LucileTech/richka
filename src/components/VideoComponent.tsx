@@ -1,5 +1,6 @@
 // VideoComponent.tsx
 import React, { useRef } from "react";
+import { getAssetPath } from "../utils/getAssetPath";
 
 const VideoComponent: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -18,7 +19,7 @@ const VideoComponent: React.FC = () => {
     <div className="video-container">
       <video ref={videoRef} className="video-element" controls>
         <source
-          src="./../../../public/videos/runway-field.mp4"
+          src={getAssetPath("/videos/runway-field.mp4")}
           type="video/mp4"
         />
         Your browser does not support the video tag.
