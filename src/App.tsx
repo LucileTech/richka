@@ -1,4 +1,6 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Suspense } from "react";
+
 import "./App.css";
 import "./index.css";
 // Header
@@ -40,45 +42,47 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-          <Products />
-          <About />
-          <Business />
-          <Process />
-          <ShopAll />
-          <Reviews />
-        </Route>
-        <Route path="/business">
-          <BusinessHome />
-          <BusinessDescription />
-          <BenefitsOfJoining />
-          <BusinessAbout />
-          <VideoComponent />
-          <BusinessSupport />
-        </Route>
-        <Route path="/proform">
-          <ProfessionnalApplication />
-        </Route>
-        <Route path="/teas">
-          <TeasHome />
-          <TeasDescription />
-          <AboutTeas />
-          <EffectSelectors />
-          <CraftTeas />
-          <VideoComponent />
-          <ShopTeas />
-        </Route>
-        <Route path="/oils">
-          <OilsHome />
-          <OilsDescription />
-          <AboutOils />
-          <OilProduction />
-        </Route>
-      </Switch>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+            <Products />
+            <About />
+            <Business />
+            <Process />
+            <ShopAll />
+            <Reviews />
+          </Route>
+          <Route path="/business">
+            <BusinessHome />
+            <BusinessDescription />
+            <BenefitsOfJoining />
+            <BusinessAbout />
+            <VideoComponent />
+            <BusinessSupport />
+          </Route>
+          <Route path="/proform">
+            <ProfessionnalApplication />
+          </Route>
+          <Route path="/teas">
+            <TeasHome />
+            <TeasDescription />
+            <AboutTeas />
+            <EffectSelectors />
+            <CraftTeas />
+            <VideoComponent />
+            <ShopTeas />
+          </Route>
+          <Route path="/oils">
+            <OilsHome />
+            <OilsDescription />
+            <AboutOils />
+            <OilProduction />
+          </Route>
+        </Switch>
+        <Footer />
+      </Suspense>
     </Router>
   );
 }
