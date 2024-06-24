@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import logo from "/logos/logo.png"; // Import your logo
 import { BsPerson } from "react-icons/bs";

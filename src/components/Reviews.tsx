@@ -1,3 +1,4 @@
+import React from "react";
 import { getAssetPath } from "../utils/getAssetPath";
 
 const Reviews = () => {

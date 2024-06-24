@@ -1,3 +1,5 @@
+import React from "react";
+
 const OilProduction: React.FC = () => {
   return (
     <div className="business-header" id="shop-teas">

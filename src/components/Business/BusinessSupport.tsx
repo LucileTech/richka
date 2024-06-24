@@ -1,3 +1,5 @@
+import React from "react";
+
 const BusinessSupport: React.FC = () => {
   return (
     <div className="business-header">

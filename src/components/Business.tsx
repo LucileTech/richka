@@ -1,3 +1,5 @@
+import React from "react";
+
 function Business() {
   return (
     <div id="BUSINESS" className="business-header">
