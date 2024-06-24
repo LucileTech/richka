@@ -1,28 +1,29 @@
-import { useState } from "react";
+// import { useState } from "react";
 import logo from "/logos/logo.png"; // Import your logo
 // import { BsPerson } from "react-icons/bs";
 // import { MdFavoriteBorder } from "react-icons/md";
-import { FaBars } from "react-icons/fa"; // Import the hamburger icon
+// import { FaBars } from "react-icons/fa";
 
 function Header() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
   return (
     <div className="header-container">
       <div className="header-left">
-        <div className="hamburger" onClick={toggleMobileMenu}>
+        {/* <div className="hamburger" onClick={toggleMobileMenu}>
           <FaBars />
-        </div>
-        <a href="/#">
+        </div> */}
+        <a href="/richka/#">
           <img src={logo} alt="Logo" className="logo" />
         </a>
       </div>
       <div className="header-right">
-        <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
+        {/* <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}> */}
+        <ul>
           <li>
             <a href="/richka/#/teas">LEARN</a>
           </li>

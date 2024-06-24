@@ -1,5 +1,5 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 
 import "./App.css";
 import "./index.css";

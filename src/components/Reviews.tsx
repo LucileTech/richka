@@ -1,4 +1,3 @@
-import React from "react";
 import { getAssetPath } from "../utils/getAssetPath";
 
 const Reviews = () => {
@@ -106,7 +105,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-      <button className="reviews-button">READ MORE REVIEWS</button>
+      {/* <button className="reviews-button">READ MORE REVIEWS</button> */}
     </div>
   );
 };
