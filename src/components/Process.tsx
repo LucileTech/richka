@@ -6,7 +6,7 @@ const Process: React.FC = () => {
     <div id="LEARN" className="why-richka-container">
       <div className="why-richka-header">
         <h1>Why Richka?</h1>
-        <a href="/#/oils">DISCOVER OUR PRODUCTION PROCESS</a>
+        <a href="/richka/#/oils">DISCOVER OUR PRODUCTION PROCESS</a>
       </div>
       <div className="why-richka-content">
         <div className="why-richka-item">

@@ -20,7 +20,7 @@ const BuisinessHome: React.FC = () => {
         </div>
         <div className="content-home">
           <p>
-            <a href="/#/proform" className="shop-link">
+            <a href="/richka/#/proform" className="shop-link">
               APPLY NOW
             </a>
           </p>

@@ -59,7 +59,7 @@ const Products: React.FC = () => {
     <div id="SHOP" className="products-container">
       <div className="products-header">
         <h1>Our Customer's Favourites</h1>
-        <a href="/#/teas" className="learn-about-teas">
+        <a href="/richka/#/teas" className="learn-about-teas">
           LEARN ABOUT TEAS
         </a>
       </div>
@@ -92,7 +92,7 @@ const Products: React.FC = () => {
           </div>
         ))}
       </div>
-      <a href="/#/teas" className="shop-all-link">
+      <a href="/richka/#/teas" className="shop-all-link">
         LEARN ABOUT TEAS
       </a>
     </div>

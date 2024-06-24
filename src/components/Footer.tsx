@@ -52,16 +52,16 @@ const Footer: React.FC = () => {
         </div>
         <div className="footer-column">
           <h3>ABOUT</h3>
-          <a id="footer-link" href="/#/oils" className="oils-link">
+          <a id="footer-link" href="/richka/#/oils" className="oils-link">
             Our Oils
           </a>
-          <a id="footer-link" href="/#/teas" className="teas-link">
+          <a id="footer-link" href="/richka/#/teas" className="teas-link">
             Our Teas
           </a>
         </div>
         <div className="footer-column">
           <h3>SHOPPING</h3>
-          <a id="footer-link" href="/#/business" className="oils-link">
+          <a id="footer-link" href="/richka/#/business" className="oils-link">
             Business
           </a>
         </div>

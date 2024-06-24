@@ -21,13 +21,13 @@ function Header() {
       <div className="header-right">
         <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
           <li>
-            <a href="/#/teas">LEARN</a>
+            <a href="/richka/#/teas">LEARN</a>
           </li>
           <li>
-            <a href="/richka/#/oils">ABOUT</a>
+            <a href="/richka/richka/#/oils">ABOUT</a>
           </li>
           <li>
-            <a href="/#/business">BUSINESS</a>
+            <a href="/richka/#/business">BUSINESS</a>
           </li>
           <li className="icons">
             <a href="#login" id="logoright">
