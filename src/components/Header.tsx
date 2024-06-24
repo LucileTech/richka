@@ -24,7 +24,7 @@ function Header() {
             <a href="/#/teas">LEARN</a>
           </li>
           <li>
-            <a href="/#/oils">ABOUT</a>
+            <a href="/richka/#/oils">ABOUT</a>
           </li>
           <li>
             <a href="/#/business">BUSINESS</a>
