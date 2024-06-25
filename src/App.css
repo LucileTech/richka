@@ -75,6 +75,13 @@
   cursor: pointer;
 }
 
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; /* Ensure the link takes the full width of the li */
+  height: 100vh;
+}
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .header-right ul {
@@ -111,6 +118,7 @@
 }
 
 /********************************************* Home */
+/* src/App.css */
 .home-container {
   border-bottom: 1px solid black;
   background-color: #d8dfd7;
@@ -122,6 +130,9 @@
 
 .home-container-left {
   width: 50vw;
+  height: 100%;
+  overflow: hidden; /* Ensure content does not overflow */
+  position: relative; /* Needed for child absolute positioning */
 }
 
 .home-container-right {
@@ -132,10 +143,13 @@
 }
 
 .image {
+  position: absolute; /* Ensure the image covers the parent container */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid black;
+  display: block; /* Ensure the image behaves like a block element */
 }
 
 .title-box {
@@ -183,6 +197,7 @@
     width: 90vw;
   }
 }
+
 /* Products */
 
 .products-container {
@@ -815,7 +830,6 @@
 
 .review-product img {
   margin-right: 10px;
-  border-top: 1px solid black;
   height: 15vh;
 }
 
