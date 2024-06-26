@@ -43,6 +43,9 @@ const OilsDescription = lazy(() => import("./components/Oils/OilsDescription"));
 const AboutOils = lazy(() => import("./components/Oils/AboutOils"));
 const OilProduction = lazy(() => import("./components/Oils/OilProduction"));
 
+const Register = lazy(() => import("./pages/Register.tsx"));
+const Login = lazy(() => import("./pages/Login.tsx"));
+
 function App() {
   return (
     <Router>
@@ -94,6 +97,12 @@ function App() {
             <OilsDescription />
             <AboutOils />
             <OilProduction />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
         </Switch>
         <Footer />
