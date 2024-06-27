@@ -1,28 +1,20 @@
-// import { useState } from "react";
+import React from "react";
+import { BsPerson } from "react-icons/bs";
+import { MdLogout } from "react-icons/md";
 import logo from "/logos/logo.png"; // Import your logo
-// import { BsPerson } from "react-icons/bs";
-// import { MdFavoriteBorder } from "react-icons/md";
-// import { FaBars } from "react-icons/fa";
+import useAuth from "../auth/useAuth";
 
-function Header() {
-  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // const toggleMobileMenu = () => {
-  //   setIsMobileMenuOpen(!isMobileMenuOpen);
-  // };
+const Header: React.FC = () => {
+  const { isLoggedIn, removeUser } = useAuth();
 
   return (
     <div className="header-container">
       <div className="header-left">
-        {/* <div className="hamburger" onClick={toggleMobileMenu}>
-          <FaBars />
-        </div> */}
         <a href="/richka/#">
           <img src={logo} alt="Logo" className="logo" />
         </a>
       </div>
       <div className="header-right">
-        {/* <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}> */}
         <ul>
           <li>
             <a href="/richka/#/teas">LEARN</a>
@@ -33,18 +25,21 @@ function Header() {
           <li>
             <a href="/richka/#/business">BUSINESS</a>
           </li>
-          {/* <li className="icons">
-            <a href="#login" id="logoright">
-              <BsPerson />
-            </a>
-            <a href="#favorites" id="logoright">
-              <MdFavoriteBorder />
-            </a>
-          </li> */}
+          <li className="icons">
+            {isLoggedIn ? (
+              <a onClick={removeUser} href="#login" id="logoright">
+                <MdLogout />
+              </a>
+            ) : (
+              <a href="#login" id="logoright">
+                <BsPerson />
+              </a>
+            )}
+          </li>
         </ul>
       </div>
     </div>
   );
-}
+};
 
 export default Header;
