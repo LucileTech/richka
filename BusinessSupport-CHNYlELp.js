@@ -1,0 +1,1 @@
+import{j as e}from"./index-4ZKEfAqv.js";const s=()=>e.jsxs("div",{className:"business-header",children:[e.jsx("h1",{children:"Need more information about the Program?"}),e.jsx("h1",{children:"We’re happy to offer personal support. Our partnerships department can answer anything today."})]});export{s as default};
