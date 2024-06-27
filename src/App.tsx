@@ -1,6 +1,7 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState } from "react";
 import ReactLoading from "react-loading";
+import UserContext from "./auth/UserContext.tsx";
 
 import "./App.css";
 import "./index.css";
@@ -47,67 +48,84 @@ const Register = lazy(() => import("./pages/Register.tsx"));
 const Login = lazy(() => import("./pages/Login.tsx"));
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [currentUser, setCurrentUser] = useState<{ email: string } | null>(
+    null
+  );
+
+  const loginUser = (user: { email: string }) => {
+    setIsLoggedIn(true);
+    setCurrentUser(user);
+  };
+
+  const removeUser = () => {
+    setIsLoggedIn(false);
+    setCurrentUser(null);
+    localStorage.removeItem("token");
+  };
   return (
-    <Router>
-      <Suspense
-        fallback={
-          <div className="loader">
-            <ReactLoading
-              type={"bars"}
-              color={"#aeafa9"}
-              height={100}
-              width={100}
-            />
-          </div>
-        }
-      >
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-            <Products />
-            <About />
-            <Business />
-            <Process />
-            <ShopAll />
-            <Reviews />
-          </Route>
-          <Route path="/business">
-            <BusinessHome />
-            <BusinessDescription />
-            <BenefitsOfJoining />
-            <BusinessAbout />
-            <VideoComponent />
-            <BusinessSupport />
-          </Route>
-          <Route path="/proform">
-            <ProfessionnalApplication />
-          </Route>
-          <Route path="/teas">
-            <TeasHome />
-            <TeasDescription />
-            <AboutTeas />
-            <EffectSelectors />
-            <CraftTeas />
-            <VideoComponent />
-            <ShopTeas />
-          </Route>
-          <Route path="/oils">
-            <OilsHome />
-            <OilsDescription />
-            <AboutOils />
-            <OilProduction />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-        </Switch>
-        <Footer />
-      </Suspense>
-    </Router>
+    <UserContext.Provider value={{ isLoggedIn, currentUser, removeUser }}>
+      <Router>
+        <Suspense
+          fallback={
+            <div className="loader">
+              <ReactLoading
+                type={"bars"}
+                color={"#aeafa9"}
+                height={100}
+                width={100}
+              />
+            </div>
+          }
+        >
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+              <Products />
+              <About />
+              <Business />
+              <Process />
+              <ShopAll />
+              <Reviews />
+            </Route>
+            <Route path="/business">
+              <BusinessHome />
+              <BusinessDescription />
+              <BenefitsOfJoining />
+              <BusinessAbout />
+              <VideoComponent />
+              <BusinessSupport />
+            </Route>
+            <Route path="/proform">
+              <ProfessionnalApplication />
+            </Route>
+            <Route path="/teas">
+              <TeasHome />
+              <TeasDescription />
+              <AboutTeas />
+              <EffectSelectors />
+              <CraftTeas />
+              <VideoComponent />
+              <ShopTeas />
+            </Route>
+            <Route path="/oils">
+              <OilsHome />
+              <OilsDescription />
+              <AboutOils />
+              <OilProduction />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/login">
+              <Login onLogin={loginUser} />
+            </Route>
+          </Switch>
+          <Footer />
+        </Suspense>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
