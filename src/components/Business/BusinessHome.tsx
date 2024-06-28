@@ -1,32 +1,21 @@
 import React from "react";
+import HomeComponent from "../HomeComponent";
 import { getAssetPath } from "../../utils/getAssetPath";
 
 const BuisinessHome: React.FC = () => {
   return (
-    <div className="home-container">
-      {/* Left part */}
-      <div className="home-container-left">
-        <img
-          src={getAssetPath("/photographs/businesshome.webp")}
-          alt="Wellness Image"
-          className="image"
-        />
-      </div>
-
-      {/* Right part */}
-      <div className="home-container-right">
-        <div className="title-box">
-          <h1>Join Our Professional Program</h1>
-        </div>
-        <div className="content-home">
-          <p>
-            <a href="/richka/#/proform" className="shop-link">
-              APPLY NOW
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+    <HomeComponent
+      imgSrc={getAssetPath("/photographs/businesshome.webp")}
+      imgAlt="Oil Image"
+      title="Join Our Professional Program"
+      content={
+        <p>
+          <a href="/richka/#/proform" className="shop-link">
+            APPLY NOW
+          </a>
+        </p>
+      }
+    />
   );
 };
 
