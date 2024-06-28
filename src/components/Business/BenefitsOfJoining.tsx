@@ -21,7 +21,7 @@ const BenefitsOfJoining: React.FC = () => {
   return (
     <div className="benefits-container">
       <h2 className="title-benefits">BENEFITS OF JOINING</h2>
-      <div className="container">
+      <div className="container" id="benefits">
         {benefits.map((benefit, index) => (
           <div className="benefit-item" key={index}>
             <img src={benefit.imgSrc} alt={`Benefit ${index + 1}`} />
