@@ -4,9 +4,9 @@ const NavBurger: React.FC = () => {
   return (
     <>
       <div className="Navburger">
-        <a href="/richka/#/teas">OILS</a>
+        <a href="/richka/#/oils">OILS</a>
 
-        <a href="/richka/#/oils">TEAS</a>
+        <a href="/richka/#/teas">TEAS</a>
 
         <a href="/richka/#/business">BUSINESS</a>
 

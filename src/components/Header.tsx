@@ -51,10 +51,10 @@ const Header: React.FC = () => {
       <div className="header-right">
         <ul className={burgerOpen ? "hide-on-desktop" : ""}>
           <li>
-            <a href="/richka/#/teas">OILS</a>
+            <a href="/richka/#/oils">OILS</a>
           </li>
           <li>
-            <a href="/richka/#/oils">TEAS</a>
+            <a href="/richka/#/teas">TEAS</a>
           </li>
           <li>
             <a href="/richka/#/business">BUSINESS</a>

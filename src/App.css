@@ -591,7 +591,7 @@
 
 .about-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 100vw;
 }
 
@@ -634,11 +634,27 @@
   color: #d8dfd7;
 }
 
+.tea-production {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10vw;
+}
+
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
   .about-image {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vw;
+  }
+
+  #teas-section-top {
+    padding: 5vw;
+  }
+
+  #teas-section-bottom {
+    padding: 5vw;
   }
 }
 
