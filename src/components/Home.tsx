@@ -5,7 +5,7 @@ import { getAssetPath } from "../utils/getAssetPath";
 const Home: React.FC = () => {
   return (
     <HomeComponent
-      imgSrc={getAssetPath("/photographs/home.jpeg")}
+      imgSrc={getAssetPath("/photographs/home.webp")}
       imgAlt="Wellness Image"
       title="Wellness at Your Fingertips"
       content={
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
             beauty from our own herbs.
           </p>
           <p>
-            <a href="/richka/richka/#/oils" className="oils-link">
+            <a href="/richka/#/oils" className="oils-link">
               LEARN MORE
             </a>
           </p>

@@ -9,12 +9,12 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src={getAssetPath("/photographs/review1.png")}
+              src={getAssetPath("/photographs/review1.webp")}
               alt="Katya Yatsenko"
               className="review-image-top-right"
             />
             <p>
-              <p>"</p>
+              <p id="quote">"</p>
               <p>
                 I liked the composition of this tea so much that I’ve been
                 drinking only “Herbs Symphony” for more than a month! Fennel
@@ -27,7 +27,7 @@ const Reviews = () => {
           </div>
           <div className="review-product">
             <img
-              src={getAssetPath("/photographs/review1product.png")}
+              src={getAssetPath("/photographs/review1product.webp")}
               alt="Herbs Symphony"
             />
             <div>
@@ -42,12 +42,12 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src={getAssetPath("/photographs/review2.png")}
+              src={getAssetPath("/photographs/review2.webp")}
               alt="Serhiy Bondar"
               className="review-image-top-right"
             />
             <p>
-              <p>"</p>
+              <p id="quote">"</p>
               <p>
                 As a Massage Therapist I selected Richka’s Essential Oils
                 because of their high quality and standing out customer service.
@@ -60,7 +60,7 @@ const Reviews = () => {
           </div>
           <div className="review-product">
             <img
-              src={getAssetPath("/photographs/review2product.png")}
+              src={getAssetPath("/photographs/review2product.webp")}
               alt="Peppermint Essential Oil"
             />
             <div>
@@ -75,12 +75,12 @@ const Reviews = () => {
         <div className="review-card">
           <div className="review-content">
             <img
-              src={getAssetPath("/photographs/review3.png")}
+              src={getAssetPath("/photographs/review3.webp")}
               alt="Iryna Pavlyuk"
               className="review-image-top-right"
             />
             <p>
-              <p>"</p>
+              <p id="quote">"</p>
               <p>
                 Just opened hydrolates for myself! Happy to use it as a balm for
                 my dry mature skin. It really make it smooth and fresh and slow
@@ -93,7 +93,7 @@ const Reviews = () => {
           </div>
           <div className="review-product">
             <img
-              src={getAssetPath("/photographs/review3product.png")}
+              src={getAssetPath("/photographs/review3product.webp")}
               alt="Lavenda Hydrolate"
             />
             <div>
@@ -106,7 +106,7 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-      <button className="reviews-button">READ MORE REVIEWS</button>
+      {/* <button className="reviews-button">READ MORE REVIEWS</button> */}
     </div>
   );
 };

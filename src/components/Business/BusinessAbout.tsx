@@ -31,7 +31,7 @@ const BusinessAbout: React.FC = () => {
         <div className="about-image">
           <div className="about-image-inside">
             <img
-              src={getAssetPath("/photographs/founder2.jpeg")}
+              src={getAssetPath("/photographs/founder2.webp")}
               alt="Richka Founder"
             />
           </div>
@@ -44,7 +44,7 @@ const BusinessAbout: React.FC = () => {
           <div className="about-image">
             <div className="about-image-inside">
               <img
-                src={getAssetPath("/photographs/founder2.jpeg")}
+                src={getAssetPath("/photographs/founder2.webp")}
                 alt="Richka Founder"
               />
             </div>

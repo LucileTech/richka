@@ -10,8 +10,8 @@ const Footer: React.FC = () => {
               Want to get all the latest news first? Sign up for our emails and
               get 10% off for your first purchase
             </p>
-            <form>
-              <input type="email" placeholder="E-MAIL" />
+            <form id="footer-form">
+              <input id="footer-form" type="email" placeholder="E-MAIL" />
               <button type="submit" className="footer-button">
                 SUBMIT
               </button>

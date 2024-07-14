@@ -10,7 +10,7 @@ const Process: React.FC = () => {
       </div>
       <div className="why-richka-content">
         <div className="why-richka-item">
-          <img src={getAssetPath("/photographs/plants.jpeg")} alt="" />
+          <img src={getAssetPath("/photographs/plants.webp")} alt="" />
           <h2>WE ARE GROWING HERBS FOR ALL OUR PRODUCTS</h2>
           <p>
             We decided to keep all the process from choosing seeds to packing
@@ -20,7 +20,7 @@ const Process: React.FC = () => {
         </div>
         <div className="why-richka-item">
           <img
-            src={getAssetPath("/photographs/cows.jpeg")}
+            src={getAssetPath("/photographs/cows.webp")}
             alt="No Fertilizers"
           />
           <div className="why-richka-item-text">
@@ -34,7 +34,7 @@ const Process: React.FC = () => {
         </div>
         <div className="why-richka-item">
           <img
-            src={getAssetPath("/photographs/bottles.jpeg")}
+            src={getAssetPath("/photographs/bottles.webp")}
             alt="Quality Products"
           />
           <div className="why-richka-item-text">
@@ -49,7 +49,7 @@ const Process: React.FC = () => {
             </p>
           </div>
         </div>
-        <a id="phone-link" href="#">
+        <a id="phone-link" href="/richka/#/oils">
           DISCOVER OUR PRODUCTION PROCESS
         </a>
       </div>

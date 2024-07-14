@@ -8,7 +8,7 @@ const ShopAll: React.FC = () => {
       <div className="products">
         <div className="product">
           <img
-            src={getAssetPath("/photographs/tea.jpeg")}
+            src={getAssetPath("/photographs/tea.webp")}
             alt="Tea Emerald Distance"
           />
           <p>
@@ -18,7 +18,7 @@ const ShopAll: React.FC = () => {
         </div>
         <div className="product">
           <img
-            src={getAssetPath("/photographs/oil.png")}
+            src={getAssetPath("/photographs/oil.webp")}
             alt="Thyme Essential Oil"
           />
           <p>

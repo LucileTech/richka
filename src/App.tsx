@@ -1,86 +1,131 @@
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { Suspense, lazy, useState } from "react";
+import ReactLoading from "react-loading";
+import UserContext from "./auth/UserContext.tsx";
+import React from "react";
 import "./App.css";
 import "./index.css";
-import React from "react";
-// Header
+
+// Header and Footer
 import Header from "./components/Header";
-// Home Page
-import Home from "./components/Home";
-import Products from "./components/Products";
-import About from "./components/About";
-import Process from "./components/Process";
-import ShopAll from "./components/ShopAll";
-import Reviews from "./components/Reviews";
-import Business from "./components/Business";
-// Business Page
-import BusinessHome from "./components/Business/BusinessHome";
-import BusinessAbout from "./components/Business/BusinessAbout";
-import BusinessSupport from "./components/Business/BusinessSupport";
-import BenefitsOfJoining from "./components/Business/BenefitsOfJoining";
-import VideoComponent from "./components/VideoComponent";
-import BusinessDescription from "./components/Business/BusinessDescription";
-// Form
-import ProfessionnalApplication from "./components/ProfessionnalApplication";
-// Learn More about Teas Page
-import TeasHome from "./components/Teas/TeasHome";
-import TeasDescription from "./components/Teas/TeasDescription";
-import AboutTeas from "./components/Teas/AboutTeas";
-import EffectSelectors from "./components/Teas/EffectSelectors";
-import CraftTeas from "./components/Teas/CraftTeas";
-import ShopTeas from "./components/Teas/ShopTeas";
-
-// Oils
-import OilsHome from "./components/Oils/OilsHome";
-import OilsDescription from "./components/Oils/OilsDescription";
-import AboutOils from "./components/Oils/AboutOils";
-import OilProduction from "./components/Oils/OilProduction";
-
-// Footer
 import Footer from "./components/Footer";
 
+// Lazy-loaded components
+const Home = lazy(() => import("./components/Home"));
+const Products = lazy(() => import("./components/Products"));
+const About = lazy(() => import("./components/About"));
+const Process = lazy(() => import("./components/Process"));
+const ShopAll = lazy(() => import("./components/ShopAll"));
+const Reviews = lazy(() => import("./components/Reviews"));
+const Business = lazy(() => import("./components/Business"));
+const BusinessHome = lazy(() => import("./components/Business/BusinessHome"));
+const BusinessAbout = lazy(() => import("./components/Business/BusinessAbout"));
+const BusinessSupport = lazy(
+  () => import("./components/Business/BusinessSupport")
+);
+const BenefitsOfJoining = lazy(
+  () => import("./components/Business/BenefitsOfJoining")
+);
+const VideoComponent = lazy(() => import("./components/VideoComponent"));
+const BusinessDescription = lazy(
+  () => import("./components/Business/BusinessDescription")
+);
+const ProfessionnalApplication = lazy(
+  () => import("./components/ProfessionnalApplication")
+);
+const TeasHome = lazy(() => import("./components/Teas/TeasHome"));
+const TeasDescription = lazy(() => import("./components/Teas/TeasDescription"));
+const AboutTeas = lazy(() => import("./components/Teas/AboutTeas"));
+const EffectSelectors = lazy(() => import("./components/Teas/EffectSelectors"));
+const CraftTeas = lazy(() => import("./components/Teas/CraftTeas"));
+const ShopTeas = lazy(() => import("./components/Teas/ShopTeas"));
+const OilsHome = lazy(() => import("./components/Oils/OilsHome"));
+const OilsDescription = lazy(() => import("./components/Oils/OilsDescription"));
+const AboutOils = lazy(() => import("./components/Oils/AboutOils"));
+const OilProduction = lazy(() => import("./components/Oils/OilProduction"));
+
+const Register = lazy(() => import("./pages/Register.tsx"));
+const Login = lazy(() => import("./pages/Login.tsx"));
+
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const [currentUser, setCurrentUser] = useState<{ email: string } | null>(
+    null
+  );
+
+  const loginUser = (user: { email: string }) => {
+    setIsLoggedIn(true);
+    setCurrentUser(user);
+  };
+
+  const removeUser = () => {
+    setIsLoggedIn(false);
+    setCurrentUser(null);
+    localStorage.removeItem("token");
+  };
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-          <Products />
-          <About />
-          <Business />
-          <Process />
-          <ShopAll />
-          <Reviews />
-        </Route>
-        <Route path="/business">
-          <BusinessHome />
-          <BusinessDescription />
-          <BenefitsOfJoining />
-          <BusinessAbout />
-          <VideoComponent />
-          <BusinessSupport />
-        </Route>
-        <Route path="/proform">
-          <ProfessionnalApplication />
-        </Route>
-        <Route path="/teas">
-          <TeasHome />
-          <TeasDescription />
-          <AboutTeas />
-          <EffectSelectors />
-          <CraftTeas />
-          <VideoComponent />
-          <ShopTeas />
-        </Route>
-        <Route path="/oils">
-          <OilsHome />
-          <OilsDescription />
-          <AboutOils />
-          <OilProduction />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <UserContext.Provider value={{ isLoggedIn, currentUser, removeUser }}>
+      <Router>
+        <Suspense
+          fallback={
+            <div className="loader">
+              <ReactLoading
+                type={"bars"}
+                color={"#aeafa9"}
+                height={100}
+                width={100}
+              />
+            </div>
+          }
+        >
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+              <Products />
+              <About />
+              <Business />
+              <Process />
+              <ShopAll />
+              <Reviews />
+            </Route>
+            <Route path="/business">
+              <BusinessHome />
+              <BusinessDescription />
+              <BenefitsOfJoining />
+              <BusinessAbout />
+              <VideoComponent />
+              <BusinessSupport />
+            </Route>
+            <Route path="/proform">
+              <ProfessionnalApplication />
+            </Route>
+            <Route path="/teas">
+              <TeasHome />
+              <TeasDescription />
+              <AboutTeas />
+              <EffectSelectors />
+              <CraftTeas />
+              <VideoComponent />
+              <ShopTeas />
+            </Route>
+            <Route path="/oils">
+              <OilsHome />
+              <OilsDescription />
+              <AboutOils />
+              <OilProduction />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+            <Route path="/login">
+              <Login onLogin={loginUser} />
+            </Route>
+          </Switch>
+          <Footer />
+        </Suspense>
+      </Router>
+    </UserContext.Provider>
   );
 }
 
