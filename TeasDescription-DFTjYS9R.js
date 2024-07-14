@@ -1,4 +1,4 @@
-import{j as e}from"./index-DVq-LUDh.js";import{I as i}from"./ImageAndDescription-DuBmPnUr.js";import{g as t}from"./getAssetPath-DEiA4C1H.js";const l=()=>{const a=`A lot of us remember our childhood summer holidays at grandparents’ village house. 
+import{j as e}from"./index-DHPuZ_n-.js";import{I as i}from"./ImageAndDescription-YDGiB4rq.js";import{g as t}from"./getAssetPath-DEiA4C1H.js";const l=()=>{const a=`A lot of us remember our childhood summer holidays at grandparents’ village house. 
     With a forest, river and pond nearby. Every national holiday, according to the season, most of families had a tea ceremony. 
     For example on Trinity, Ukrainians have tradition of decorating the home with greenery, which is believed to protect against evil spirits. 
     So people collect thyme, cornflowers and wild herbs and brew it then. In winter or early spring, when the snow had not yet melted, they 

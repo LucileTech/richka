@@ -1,4 +1,4 @@
-import{j as e}from"./index-DVq-LUDh.js";import{I as n}from"./ImageAndDescription-DuBmPnUr.js";import{g as t}from"./getAssetPath-DEiA4C1H.js";const h=()=>{const a=`When you open a bottle of pure, unadulterated essential oil, your senses are instantly filled with its potent aroma, even from a distance. What your nose detects are the naturally occurring elements of the essential oil.
+import{j as e}from"./index-DHPuZ_n-.js";import{I as n}from"./ImageAndDescription-YDGiB4rq.js";import{g as t}from"./getAssetPath-DEiA4C1H.js";const h=()=>{const a=`When you open a bottle of pure, unadulterated essential oil, your senses are instantly filled with its potent aroma, even from a distance. What your nose detects are the naturally occurring elements of the essential oil.
 Every essential oil varies in its natural makeup, so aromas and benefits are also unique. For example, Lavender oil includes elements that make it effective for soothing skin irritations, and promoting a restful environment for sleep.
 Meanwhile, Sage essential oil is an powerfull immune stimulant. It is used to fight infections (such as colds) and germs. Cure  bronchitis and influenza and dental abscesses.
 
