@@ -11,7 +11,7 @@ describe("HomeComponent", () => {
     imgSrc: "path/to/image.jpg",
     imgAlt: "Image Alt Text",
     title: "Test Title",
-    content: <p>Test Content</p>,
+    content: <p>Content</p>,
   };
 
   it("renders with correct props", () => {
@@ -20,6 +20,6 @@ describe("HomeComponent", () => {
     // Assert that the component renders with the correct elements and content
     expect(screen.getByAltText(props.imgAlt)).toBeInTheDocument();
     expect(screen.getByText(props.title)).toBeInTheDocument();
-    expect(screen.getByText("Test Content")).toBeInTheDocument();
+    expect(screen.getByText("Content")).toBeInTheDocument();
   });
 });
